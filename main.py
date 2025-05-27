@@ -6,7 +6,7 @@ app = FastAPI()
 def getmethod():
     return {"status":True,"message":"Hey"}
 
-#this would throw error if is present before /blog/{blog_id} as pydantic would try to validate
+#this would throw error if is present before /blog/{blog_id} as the pydantic would try to validate
 #unpublished as int
 @app.get('/blog/unpublished')
 def blog():
